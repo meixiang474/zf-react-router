@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <a href="#/a">去/a</a>
+  <a href="#/b">去/b</a>
+  <script>
+    let root = document.getElementById('root')
+    window.addEventListener('hashchange', (event) => {
+      let hash = window.location.hash
+      root.innerHTML = hash
+    })
+  </script>
+</body>
+</html>
